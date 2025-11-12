@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name ="viewport" content ="width=device-width,initial-scale=1.0">
+  <title>Currículo</title>
+
+  <!-- Fontes Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- CSS Externo -->
+  <link rel="stylesheet" href="css/estilo.css">
+
+  <!-- JS Externo -->
+  <script defer src="javascript/javascript.js"></script>
+</head>
+
+<body>
+  <!-- Sidebar -->
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="#inicio">Início</a>
+    <a href="#formacao">Formação</a>
+    <a href="#experiencia">Experiência</a>
+    <a href="#habilidades">Habilidades</a>
+  </div>
+
+  <div id="main">
+    <button class="openbtn" onclick="openNav()">☰ Menu</button>
+
+    <div class="foto-perfil">
+      <img src="imagem/Laurie.jpg" alt="Foto de Perfil">
+    </div>
+
+    <h1 id="inicio">Currículo de Laura Gessily</h1>
+
+    <section id="dados">
+      <h2>Dados Pessoais</h2>
+      <ul>
+        <li>Nome: Laura Gessily Salasar</li>
+        <li>Email: lauragessilysala@gmail.com</li>
+        <li>Telefone: (41) 99780-3273</li>
+      </ul>
+    </section>
+
+    <section id="Apresentacao">
+      <h2>Apresentação</h2>
+      <p>Olá, me chamo Laura Salasar. Sou estudante de Programação de Jogos Digitais no IFPR. Espero que com minha experiência, possa ajudar a empresa a evoluir cada vez mais.</p>
+    </section>
+
+    <section id="formacao">
+      <h2>Formação</h2>
+      <ul>
+        <li>Ensino Técnico Integrado ao Ensino Médio em Programação de Jogos Digitais - IFPR (2022 - Em andamento)</li>
+        <li>Ensino Fundamental: Colégio Estadual Cívico Militar Gottlieb Mueller (2017-2022)</li>
+      </ul>
+      <h3>Educação Complementar</h3>
+      <ul>
+        <li>Curso básico de Libras - 40h</li>
+      </ul>
+    </section>
+
+    <section id="experiencia">
+      <h2>Experiência Profissional</h2>
+      <ul>
+        <li>Experiência com vendas de 2017 a 2024</li>
+      </ul>
+    </section>
+
+    <section id="conhecimentos">
+      <h2>Conhecimentos</h2>
+      <ul>
+        <li>Linguagens: C, C++, C#, JavaScript</li>
+        <li>HTML5, CSS</li>
+        <li>Unity, Visual Studio, Code::Blocks</li>
+        <li>Blender, Inkscape</li>
+        <li>Fmod, Audacity, Nuendo</li>
+      </ul>
+    </section>
+
+    <section id="habilidades">
+      <h2>Habilidades</h2>
+      <ul>
+        <li>Desenvolvimento de jogos digitais</li>
+        <li>Ilustração e Modelagem 2D</li>  
+        <li>Boa interação com o público</li>
+      </ul>
+    </section>
+
+    <section id="idiomas">
+      <h2>Idiomas</h2>
+      <ul>
+        <li>Português</li>  
+        <li>Inglês (avançado)</li> 
+      </ul>
+    </section>
+
+    <section class="portifolio">
+      <h2>Portfólio</h2>
+      <img src="imagem/7.png" alt="Logo do jogo Terra de Sol e Sangue">
+      <img src="imagem/Bolin.png" alt="Logo do jogo Confeitaria Bolinhos">
+      <img src="imagem/gessily.png" alt="Logo do jogo Gessily's Head">
+      <img src="imagem/Robert Dream.png" alt="Logo do jogo Robert Dream">
+      <img src="imagem/HoneyBee.png" alt="Logo do jogo Abelhuda" onclick="abrirPopup()">
+    </section>
+
+    <div class="carrossel-container">
+      <h2>Projetos em Imagens</h2>
+      <div class="carrossel">
+        <button class="carrossel-btn" onclick="mudarImagens(-1)">&#10094;</button>
+        <div class="carrossel-imagens" id="carrossel-imagens"></div>
+        <button class="carrossel-btn" onclick="mudarImagens(1)">&#10095;</button>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Laura Salasar. Todos os direitos reservados.</p>
+      <button onclick="document.body.style.fontFamily='Roboto, sans-serif'">Roboto</button>
+      <button onclick="document.body.style.fontFamily='Lobster, cursive'">Lobster</button>
+      <button onclick="document.body.style.fontFamily='Montserrat, sans-serif'">Montserrat</button>
+    </footer>
+  </div>
+
+  <!-- POPUP do jogo da abelha -->
+  <div id="popup" class="popup">
+    <div class="popup-conteudo">
+      <span class="fechar" onclick="fecharPopup()">&times;</span>
+      <h2>🐝 Jogo da Abelha</h2>
+      <p>Quer jogar o jogo Abelhuda?</p>
+      <button onclick="jogarAbelha()">Jogar</button>
+    </div>
+  </div>
+
+</body>
+</html>
